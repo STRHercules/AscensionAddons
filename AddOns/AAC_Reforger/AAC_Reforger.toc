@@ -1,0 +1,9 @@
+## Interface: 30300
+## Title: AAC_Reforger
+## Notes: Reforges Mystic Scrolls
+## Author: Codewolke - High - Bankson
+## Version: 1.1
+## Dependencies: AAC_SuperScan
+## SavedVariables: ReforgerDB
+
+AAC_Reforger.lua

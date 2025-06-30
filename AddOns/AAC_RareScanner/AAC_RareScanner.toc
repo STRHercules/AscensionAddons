@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: AAC_RareScanner
+## Notes: Scans for Rares in your vicinity and warns you whenever one is around.
+## Author: Codewolke - High - Bankson
+## Version: 1.2
+
+
+AAC_RareScanner.lua

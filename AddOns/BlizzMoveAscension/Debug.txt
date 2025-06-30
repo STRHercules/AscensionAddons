@@ -1,0 +1,145 @@
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+[3] [Katywampus]: try /reload ui if that doesnt work log out and log back in
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+[2] [Fissayaz]: {skull} Slaughter la guilde FR qui découpe ! {skull}
+[2] [Fissayaz]: Tu cherches des joueurs friendly et/ou aguerris pour commencer tes M+ ou tout simplement Push ? Tu veux enfin raid avec des FR ? Tu aimes le pvp ou le prestige ? Slaughter est fait pour toi !
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+[G] [Tissae]: okay nerds, I did it
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)
+[G] [Tissae]: Am Spacegoat
+Outfitter Scrollbar Debug: Frame: OutfitterMainFrameScrollFrameScrollBar
+  - IsShown: 1, Alpha: 1.00, FrameLevel: 4, FrameStrata: MEDIUM
+  - Height: 0.00, Width: 17.78, Parent: OutfitterMainFrameScrollFrame
+  - Condition for showing: vTotalNumItems (76) > self.cMaxDisplayedItems (15) is true
+  - Thumb (OutfitterMainFrameScrollFrameScrollBarThumbTexture): Shown=1, Alpha=1.00, Texture=nil, VertexColor=(1.00,1.00,1.00,1.00)

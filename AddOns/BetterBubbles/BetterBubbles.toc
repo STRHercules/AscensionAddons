@@ -1,0 +1,8 @@
+## Interface: 30300
+## Version: 1.0
+## Title: BetterBubbles
+## Notes: Configurable chat bubble replacement.
+## Author: lildirtbag
+## SavedVariables: BetterBubblesDB
+
+BetterBubbles.lua

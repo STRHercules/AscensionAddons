@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: AAC_Deleter
+## Notes: Puts a "Delete" into the confirmation box when deleting something
+## Author: Codewolke - High - Bankson
+## Version: 1.0
+
+
+AAC_Deleter.lua

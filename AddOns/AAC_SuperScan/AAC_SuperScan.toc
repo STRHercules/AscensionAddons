@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: AAC_SuperScan
+## Notes: Auction House Addon
+## Author: Codewolke - High - Bankson
+## Version: 2.3
+## SavedVariables: SuperScanDB
+
+AAC_SuperScan.lua
