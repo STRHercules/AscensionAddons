@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: TinyTracker
+## Notes: A smaller, modern version of the defaul quest tracker.
+## Author: lildirtbag
+## Version: 1.0
+## SavedVariables: TinyTrackerDB
+
+TinyTracker.lua

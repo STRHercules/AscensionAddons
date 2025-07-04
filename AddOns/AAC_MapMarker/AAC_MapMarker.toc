@@ -1,8 +1,0 @@
-## Interface: 30300
-## Title: AAC_MapMarker
-## Notes: Let you mark stuff at the map like Shady Dealers and Rares or Farmspots
-## Author: Codewolke - High - Bankson
-## Version: 1.0.1
-## SavedVariables: MapMarkerDB
-
-AAC_MapMarker.lua

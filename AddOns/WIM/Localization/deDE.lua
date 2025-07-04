@@ -222,8 +222,6 @@ WIM.AddLocale("deDE", {
     ["Invite to Party"] = "In die Gruppe einladen",
     ["Add Friend"] = "Freund hinzuf\195\188gen",
     ["Ignore User"] = "Spieler ignorieren",
-    ["Invite to Guild"] = "In die Gilde einladen",
-    ["Recruit"] = "Anwerben",
     ["Are you sure you want to\nignore %s?"] = "Bist du sicher, dass du \n %s ignorieren willst?",
     
     -- Tutorials.lua --
