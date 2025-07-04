@@ -409,6 +409,26 @@ local function KickPlayers(container)
         PlayerCharacters = {}
         end)
     container:AddChild(buttonKick)
+
+    local purgeButton = AceGUI:Create("Button")
+    purgeButton:SetText("Purge 30d+")
+    purgeButton:SetWidth(330)
+    purgeButton:SetFullWidth(true)
+    purgeButton:SetCallback("OnClick", function()
+        local total = GetNumGuildMembers()
+        local removed = 0
+        for i = 1, total do
+            local name, _, _, _, _, _, _, _, online = GetGuildRosterInfo(i)
+            local _, _, daysOffline = GetGuildRosterInfo(i)
+            if not online and daysOffline and daysOffline > 30 then
+                GuildUninvite(name)
+                removed = removed + 1
+                print("Removed:", name, "- Offline for", daysOffline, "days.")
+            end
+        end
+        print("Purge complete. Total removed:", removed)
+    end)
+    container:AddChild(purgeButton)
 end
 -- mass invite to raid tab
 local function MassInviteToGroup(container)
@@ -533,7 +553,7 @@ local function MassInviteToGroup(container)
 end
 -- guild info tab
 local function GuildInfo(container)
-    
+
     local head1 = AceGUI:Create("Heading")
     head1:SetText("Players")
     head1:SetFullWidth(true)
@@ -557,41 +577,29 @@ local function GuildInfo(container)
     container:AddChild(desc3)
 
     local head2 = AceGUI:Create("Heading")
-    head2:SetText("Classes")
+    head2:SetText("Guild Information")
     head2:SetFullWidth(true)
     head2:SetHeight(30)
     container:AddChild(head2)
 
-    CountClasses()
+    local infoBox = AceGUI:Create("MultiLineEditBox")
+    infoBox:SetLabel("Info Text")
+    infoBox:SetFullWidth(true)
+    infoBox:SetNumLines(8)
+    infoBox:SetText(GetGuildInfoText() or "")
+    infoBox:SetCallback("OnEnterPressed", function(widget, event, text)
+        SetGuildInfoText(text)
+    end)
+    container:AddChild(infoBox)
 
-    local formattedClassCounts = {}
-    for classz, count in pairs(classCounts) do
-        formattedClassCounts[capitalize(classz)] = count
-    end
-
-    local simpleGroup = AceGUI:Create("SimpleGroup")
-    simpleGroup:SetLayout("Flow")
-    simpleGroup:SetFullWidth(true)
-    -- Iterate over classCounts and create icon and label for each class
-    for class, count in pairs(formattedClassCounts) do
-        -- Create class icon
-        local icon = AceGUI:Create("Icon")
-        local iconPath = "Interface\\Icons\\ClassIcon_" .. class
-        icon:SetImage("Interface\\Icons\\ClassIcon_" .. class)
-        icon:SetWidth(10)
-        icon:SetHeight(10)
-    
-        -- Get localized display name for the class
-        local displayName = LOCALIZED_CLASS_NAMES_MALE[class] or class
-    
-        -- Create label for class count using localized display name
-        local label = AceGUI:Create("Label")
-        label:SetText(displayName .. ": " .. count)
-    
-        -- Add icon and label to the SimpleGroup
-        simpleGroup:AddChildren(label)
-    end
-    container:AddChild(simpleGroup)
+    local motdEdit = AceGUI:Create("EditBox")
+    motdEdit:SetLabel("Guild MOTD")
+    motdEdit:SetFullWidth(true)
+    motdEdit:SetText(GetGuildRosterMOTD() or "")
+    motdEdit:SetCallback("OnEnterPressed", function(widget, event, text)
+        GuildSetMOTD(text)
+    end)
+    container:AddChild(motdEdit)
 end
 -- guild recruit tab
 local function ReqruitMembers(container)
@@ -651,9 +659,9 @@ local function Settings(container)
     desc:SetFullWidth(true)
     container:AddChild(desc)
 end
-local function Rooster(container)
+local function Roster(container)
     local head2 = AceGUI:Create("Heading")
-    head2:SetText("Rooster")
+    head2:SetText("Roster")
     head2:SetFullWidth(true)
     head2:SetHeight(30)
     container:AddChild(head2)
@@ -784,7 +792,7 @@ local function SelectGroup(container, event, group)
     elseif group == "tab6" then
         Settings(container)
     elseif group == "tab7" then
-        Rooster(container)
+        Roster(container)
     end
 end
 -- Create the frame container
@@ -806,7 +814,7 @@ local function showFrame()
     local tab =  AceGUI:Create("TabGroup")
     tab:SetLayout("List")
     -- Setup which tabs to show
-    tab:SetTabs({{text="Invite", value="tab1"}, {text="Kick", value="tab2"},{text="Mass Invite",value="tab3"},{text="Guild Info",value="tab4"},{text="Rooster",value="tab7"},{text="Recruit",value="tab5"},{text="Settings",value="tab6"}})
+    tab:SetTabs({{text="Invite", value="tab1"}, {text="Kick", value="tab2"},{text="Mass Invite",value="tab3"},{text="Guild Info",value="tab4"},{text="Roster",value="tab7"},{text="Recruit",value="tab5"},{text="Settings",value="tab6"}})
     -- Register callback
     tab:SetCallback("OnGroupSelected", SelectGroup)
     -- Set initial Tab (this will fire the OnGroupSelected callback)
