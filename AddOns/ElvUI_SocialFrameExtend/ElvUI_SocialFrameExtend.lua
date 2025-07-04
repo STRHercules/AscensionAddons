@@ -1,5 +1,7 @@
 local Addon = CreateFrame('Frame')
+local initialized = false
 Addon:RegisterEvent('PLAYER_LOGIN')
+Addon:RegisterEvent('ADDON_LOADED')
 
 local EXTRA_ROWS = 10
 local EXTRA_WIDTH = 120
@@ -47,7 +49,22 @@ local function ResizeSocial()
     WHOS_TO_DISPLAY = WHOS_TO_DISPLAY + EXTRA_ROWS
 end
 
-Addon:SetScript('OnEvent', function()
-    ResizeSocial()
+local function TryInit()
+    if initialized then return end
+    if not IsAddOnLoaded("Blizzard_GuildUI") then
+        LoadAddOn("Blizzard_GuildUI")
+    end
+    if GuildListScrollFrame and GuildStatusScrollFrame then
+        ResizeSocial()
+        initialized = true
+    end
+end
+
+Addon:SetScript('OnEvent', function(_, event, arg1)
+    if event == 'PLAYER_LOGIN' then
+        TryInit()
+    elseif event == 'ADDON_LOADED' and arg1 == 'Blizzard_GuildUI' then
+        TryInit()
+    end
 end)
 
