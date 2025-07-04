@@ -538,11 +538,13 @@ GRMsync.HookComms = function()
     end
 
     local hooked = false
-    if C_ChatInfo and C_ChatInfo.SendAddonMessage then
-        hooked = pcall(hooksecurefunc, C_ChatInfo, "SendAddonMessage", countFunc)
+    if type(C_ChatInfo) == "table" and type(C_ChatInfo.SendAddonMessage) == "function" then
+        hooked = pcall(function()
+            hooksecurefunc(C_ChatInfo, "SendAddonMessage", countFunc)
+        end)
     end
     if not hooked then
-        hooksecurefunc("SendAddonMessage", countFunc)
+        pcall(hooksecurefunc, "SendAddonMessage", countFunc)
     end
 
     GRMsyncGlobals.CTL = _G.ChatThrottleLib;
