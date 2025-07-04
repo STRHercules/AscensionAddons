@@ -4,8 +4,8 @@ This repo contains the addons I use on Project Ascension along with a few custom
 
 ## Highlights
 
-### QuickGuildInvite
-* **Author**: Nat (with help from ChatGPT)
+### [QuickGuildInvite](https://github.com/STRHercules/WotLKQuickGuildInvite)
+* **Author**: Me (with help from ChatGPT)
 * Custom addon written from scratch to add a right-click option for guild invites.
 
 ### ElvUI
