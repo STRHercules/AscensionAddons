@@ -42,25 +42,31 @@ local function CheckRestrictedZones(test)
     end
     return false
 end
-local function GetDKP(string)
-    local strings
-    local containsOnlyAlphabetic = string.match(string, "^[A-Za-z]+$")
-    if containsOnlyAlphabetic then
-        for i = 1, GetNumGuildMembers(true) do -- Passing true includes offline members
-            local name, _, _, _, _, _, officerNote, _, _, _, _, _, _, _, online = GetGuildRosterInfo(i)
-            if name == string then
-                --local netNumbers2 = string.match(officerNote, "Net:(%d+) Tot:")
-                strings = "Fix alt DKP"
+local function GetDKP(text)
+    if not text or text == "" then
+        return "0 DKP"
+    end
+
+    -- Direct "Net:" pattern
+    local net = text:match("Net:(%d+)")
+    if net then
+        return net .. " DKP"
+    end
+
+    -- Possibly an alt name referencing the main's officer note
+    if text:match("^[A-Za-z]+$") then
+        for i = 1, GetNumGuildMembers(true) do
+            local name, _, _, _, _, _, officerNote = GetGuildRosterInfo(i)
+            if name == text then
+                local altNet = officerNote and officerNote:match("Net:(%d+)")
+                if altNet then
+                    return altNet .. " DKP"
+                end
             end
         end
-    else
-        local netNumbers = string.match(string, "Net:(%d+) Tot:")
-        if netNumbers then
-            strings = netNumbers .. " DKP"
-        else strings = "FIX"
-        end
     end
-    return strings
+
+    return "0 DKP"
 end
 GManager.db = {
     channelForSpam = 1,
@@ -560,8 +566,17 @@ local function GuildInfo(container)
     head1:SetHeight(30)
     container:AddChild(head1)
 
+    local totalMembers = GetNumGuildMembers(true)
+    local onlineMembers = 0
+    for i = 1, totalMembers do
+        local _, _, _, _, _, _, _, _, online = GetGuildRosterInfo(i)
+        if online then
+            onlineMembers = onlineMembers + 1
+        end
+    end
+
     local desc2 = AceGUI:Create("Label")
-    desc2:SetText("Total: " .. GetNumGuildMembers(true))
+    desc2:SetText("Total: " .. totalMembers)
     desc2:SetColor(1, 1, 0)
     desc2:SetFont("Fonts\\FRIZQT__.TTF", 14)
     --desc2:SetJustifyH("CENTER")
@@ -569,7 +584,7 @@ local function GuildInfo(container)
     container:AddChild(desc2)
 
     local desc3 = AceGUI:Create("Label")
-    desc3:SetText("Online: " .. GetNumGuildMembers())
+    desc3:SetText("Online: " .. onlineMembers)
     desc3:SetColor(1, 1, 0)
     desc3:SetFont("Fonts\\FRIZQT__.TTF", 14)
     --desc3:SetJustifyH("CENTER")
@@ -710,27 +725,11 @@ local function Roster(container)
             classIconImage:SetLabel("[" .. plrInfo[7] .. "]|c" .. GetClassColor(plrInfo[2]).. name .. "|r")
             simpleInnerGroup:AddChild(classIconImage)
 
-            local part1, part2 = string.match(plrInfo[4], "MS:%s*(.-)%s*OS:%s*(.-)$")
-
-            local MSIcon = AceGUI:Create("Icon")
-            MSIcon:SetImage("Interface\\Icons\\INV_Misc_QuestionMark")
-            MSIcon:SetImageSize(28,28)
-            MSIcon:SetLabel(part1)
-            MSIcon:SetWidth(40)
-            MSIcon:SetCallback("OnClick", function()
-                print("MS Change")
-            end)
-            simpleInnerGroup:AddChild(MSIcon)
-
-            local OSIcon = AceGUI:Create("Icon")
-            OSIcon:SetImage("Interface\\Icons\\INV_Misc_QuestionMark")
-            OSIcon:SetImageSize(28,28)
-            OSIcon:SetLabel(part2)
-            OSIcon:SetWidth(40)
-            OSIcon:SetCallback("OnClick", function()
-                print("OS Change")
-            end)
-            simpleInnerGroup:AddChild(OSIcon)
+            local rankLabel = AceGUI:Create("Label")
+            rankLabel:SetWidth(100)
+            rankLabel:SetText(plrInfo[3])
+            rankLabel:SetFont("Fonts\\FRIZQT__.TTF", 12)
+            simpleInnerGroup:AddChild(rankLabel)
 
             local BTNInv = AceGUI:Create("Icon")
             BTNInv:SetImage("Interface\\Icons\\INV_Misc_GroupNeedMore")
