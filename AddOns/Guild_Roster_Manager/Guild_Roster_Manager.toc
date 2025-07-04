@@ -1,5 +1,5 @@
 
-## Interface: 90005
+## Interface: 30300
 ## Author: Arkaan
 ## Version: 1.9294
 ## Title: Guild Roster Manager
@@ -36,3 +36,4 @@ GRM_Patches.lua
 GRM_ClassicFunctions.lua
 GRM_CodeTests.lua
 GRM_API.lua
+WrathCompat.lua
