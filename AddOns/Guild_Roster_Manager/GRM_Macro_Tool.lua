@@ -2,8 +2,8 @@
 
 -- CREATING FRAMES -- 
 -- Core Frame
-GRM_UI.GRM_ToolCoreFrame = CreateFrame( "Frame" , "GRM_ToolCoreFrame" , UIParent , "TranslucentFrameTemplate" );
-GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame = CreateFrame( "Frame" , "GRM_ToolIgnoreListFrame" , UIParent , "TranslucentFrameTemplate" );
+GRM_UI.GRM_ToolCoreFrame = CreateFrame( "Frame" , "GRM_ToolCoreFrame" , UIParent  );
+GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame = CreateFrame( "Frame" , "GRM_ToolIgnoreListFrame" , UIParent  );
 
 -- Core Frame Close Buttons
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolCoreFrameCloseButton = CreateFrame( "Button" , "GRM_ToolCoreFrameCloseButton" , GRM_UI.GRM_ToolCoreFrame , "UIPanelCloseButton" );
@@ -88,7 +88,7 @@ GRM_UI.GRM_ToolCoreFrame.GRM_DemoteTabText = GRM_UI.GRM_ToolCoreFrame.GRM_Demote
 -- Macro'd Scroll Frame
 -- SCROLL FRAME
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolMacrodScrollFrame = CreateFrame ( "ScrollFrame" , "GRM_ToolMacrodScrollFrame" , GRM_UI.GRM_ToolCoreFrame );
-GRM_UI.GRM_ToolCoreFrame.GRM_ToolMacrodScrollBorderFrame = CreateFrame ( "Frame" , "GRM_ToolMacrodScrollBorderFrame" , GRM_UI.GRM_ToolCoreFrame , "TranslucentFrameTemplate" );
+GRM_UI.GRM_ToolCoreFrame.GRM_ToolMacrodScrollBorderFrame = CreateFrame ( "Frame" , "GRM_ToolMacrodScrollBorderFrame" , GRM_UI.GRM_ToolCoreFrame  );
 -- CONTENT FRAME (Child Frame)
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolMacrodScrollChildFrame = CreateFrame ( "Frame" , "GRM_ToolMacrodScrollChildFrame" );
 -- SLIDER
@@ -97,7 +97,7 @@ GRM_UI.GRM_ToolCoreFrame.GRM_ToolMacrodScrollFrameSilder:Hide();
 
 -- Queued Scroll Frame
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolQueuedScrollFrame = CreateFrame ( "ScrollFrame" , "GRM_ToolQueuedScrollFrame" , GRM_UI.GRM_ToolCoreFrame );
-GRM_UI.GRM_ToolCoreFrame.GRM_ToolQueuedScrollBorderFrame = CreateFrame ( "Frame" , "GRM_ToolQueuedScrollBorderFrame" , GRM_UI.GRM_ToolCoreFrame , "TranslucentFrameTemplate" );
+GRM_UI.GRM_ToolCoreFrame.GRM_ToolQueuedScrollBorderFrame = CreateFrame ( "Frame" , "GRM_ToolQueuedScrollBorderFrame" , GRM_UI.GRM_ToolCoreFrame  );
 -- CONTENT FRAME (Child Frame)
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolQueuedScrollChildFrame = CreateFrame ( "Frame" , "GRM_ToolQueuedScrollChildFrame" );
 -- SLIDER
@@ -106,7 +106,7 @@ GRM_UI.GRM_ToolCoreFrame.GRM_ToolQueuedScrollFrameSilder:Hide();
 
 -- Ignored Scroll Frame
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame.GRM_ToolIgnoredScrollFrame = CreateFrame ( "ScrollFrame" , "GRM_ToolIgnoredScrollFrame" , GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame );
-GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame.GRM_ToolIgnoredScrollBorderFrame = CreateFrame ( "Frame" , "GRM_ToolIgnoredScrollBorderFrame" , GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame , "TranslucentFrameTemplate" );
+GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame.GRM_ToolIgnoredScrollBorderFrame = CreateFrame ( "Frame" , "GRM_ToolIgnoredScrollBorderFrame" , GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame  );
 -- CONTENT FRAME (Child Frame)
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame.GRM_ToolIgnoredScrollChildFrame = CreateFrame ( "Frame" , "GRM_ToolIgnoredScrollChildFrame" );
 -- SLIDER
@@ -115,7 +115,7 @@ GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame.GRM_ToolIgnoredScrollFrameSilde
 
 -- Rules Scroll Frame
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolRulesScrollFrame = CreateFrame ( "ScrollFrame" , "GRM_ToolRulesScrollFrame" , GRM_UI.GRM_ToolCoreFrame );
-GRM_UI.GRM_ToolCoreFrame.GRM_ToolRulesScrollBorderFrame = CreateFrame ( "Frame" , "GRM_ToolRulesScrollBorderFrame" , GRM_UI.GRM_ToolCoreFrame , "TranslucentFrameTemplate" );
+GRM_UI.GRM_ToolCoreFrame.GRM_ToolRulesScrollBorderFrame = CreateFrame ( "Frame" , "GRM_ToolRulesScrollBorderFrame" , GRM_UI.GRM_ToolCoreFrame  );
 -- CONTENT FRAME (Child Frame)
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolRulesScrollChildFrame = CreateFrame ( "Frame" , "GRM_ToolRulesScrollChildFrame" );
 -- SLIDER
@@ -130,7 +130,7 @@ GRM_UI.GRM_ToolCoreFrame.GRM_CustomRuleAddButton = CreateFrame( "Button" , "GRM_
 GRM_UI.GRM_ToolCoreFrame.GRM_CustomRuleAddButton.GRM_CustomRuleAddButtonText = GRM_UI.GRM_ToolCoreFrame.GRM_CustomRuleAddButton:CreateFontString ( "GRM_CustomRuleAddButtonText" , "OVERLAY" , "GameFontNormalTiny" );
 
 -- Custom Rules Popup Frame
-GRM_UI.GRM_ToolCoreFrame.GRM_ToolCustomRulesFrame = CreateFrame ( "Frame" , "GRM_ToolCustomRulesFrame" , GRM_UI.GRM_ToolCoreFrame , "TranslucentFrameTemplate" );
+GRM_UI.GRM_ToolCoreFrame.GRM_ToolCustomRulesFrame = CreateFrame ( "Frame" , "GRM_ToolCustomRulesFrame" , GRM_UI.GRM_ToolCoreFrame  );
 GRM_UI.GRM_ToolCoreFrame.GRM_ToolCustomRulesFrame:Hide();
 
 -- Rank Custom Rules

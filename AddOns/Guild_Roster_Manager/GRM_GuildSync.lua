@@ -526,16 +526,24 @@ end
 -- What it Does:    Hooks the SendAddonMessage function so if any other addon uses it I can see
 -- Purpose:         Global outgoing data cap is shared among all addons. To prevent disconnects it is important to know how much overhead other addons are using.
 GRMsync.HookComms = function()
-    
-    hooksecurefunc ( C_ChatInfo , "SendAddonMessage" , function( prefix , msg )
+
+    local function countFunc(prefix, msg)
         if prefix ~= "GRM_SYNC" then
-            if type ( msg ) == "string" then
-                GRMsyncGlobals.SyncCount = GRMsyncGlobals.SyncCount + #msg + #prefix;
+            if type(msg) == "string" then
+                GRMsyncGlobals.SyncCount = GRMsyncGlobals.SyncCount + #msg + #prefix
             else
-                GRMsyncGlobals.SyncCount = GRMsyncGlobals.SyncCount + 255;
+                GRMsyncGlobals.SyncCount = GRMsyncGlobals.SyncCount + 255
             end
         end
-    end);
+    end
+
+    local hooked = false
+    if C_ChatInfo and C_ChatInfo.SendAddonMessage then
+        hooked = pcall(hooksecurefunc, C_ChatInfo, "SendAddonMessage", countFunc)
+    end
+    if not hooked then
+        hooksecurefunc("SendAddonMessage", countFunc)
+    end
 
     GRMsyncGlobals.CTL = _G.ChatThrottleLib;
         

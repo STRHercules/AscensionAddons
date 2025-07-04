@@ -22,6 +22,13 @@ if not C_Timer.After then
     end
 end
 
+-- Maximum player level helper for pre-Shadowlands clients
+if not GetMaxPlayerLevel then
+    function GetMaxPlayerLevel()
+        return MAX_PLAYER_LEVEL or 80
+    end
+end
+
 -- Chat API backports
 if not C_ChatInfo then
     C_ChatInfo = {}
