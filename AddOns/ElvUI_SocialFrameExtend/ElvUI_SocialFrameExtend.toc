@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: |cff1784d1E|r|cffe5e3e3lvUI|r Social Frame Extend
+## Author: Codex
+## Version: 1.0
+## Notes: Enlarges the default social window and guild tab.
+## RequiredDeps: ElvUI
+
+ElvUI_SocialFrameExtend.lua
